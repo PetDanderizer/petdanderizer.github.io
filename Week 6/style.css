@@ -1,0 +1,51 @@
+/*
+ * I GOT HELP FROM MY BROTHER WITH THIS!
+ * Most of this was my doing, but I was pointed in the
+ * right direction for a couple of these things!
+ */
+
+@keyframes jiggleX {
+    from {left: 0px;}
+    to {left: 100px;}
+}
+
+.question_title {
+    border-top: 1px solid black;
+}
+
+form > * {
+    position: relative;
+    animation-name: jiggleX;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.4s;
+}
+
+form :nth-child(7n) {
+    animation-delay: -0s;
+}
+
+form :nth-child(7n+1) {
+    animation-delay: -0.4s;
+}
+
+form :nth-child(7n+2) {
+    animation-delay: -0.8s;
+}
+
+form :nth-child(7n+3) {
+    animation-delay: -1.2s;
+}
+
+form :nth-child(7n+4) {
+    animation-delay: -1.6s;
+}
+
+form :nth-child(7n+5) {
+    animation-delay: -2s;
+}
+
+form :nth-child(7n+6) {
+    animation-delay: -2.4s;
+}
