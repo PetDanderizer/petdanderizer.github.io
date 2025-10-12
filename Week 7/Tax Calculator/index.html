@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script>
+            function calculateTax()
+            {
+                var price = document.getElementById("price").value;
+                var tax = price * 0.0825;
+                var total = price + tax;
+                
+                document.getElementById("tax").value = tax;
+                document.getElementById("total").value = total;
+            }
+        </script>
+    </head>
+    <body>
+        <span><a href="index.html">Home</a> | <span><a href="bulb.html">Bulb</a> | <span><a href="form.html">Form</a> |</span><br>
+        <h2>Tax Calculator</h2>
+        <form>
+            <label for="price">Price of product:</label><br>
+            <input type="text" id="price" name="price" value=""><br>
+            
+            <label for="tax">Tax to be collected:</label><br>
+            <input type="text" id="tax" name="tax" value="" disabled><br>
+            
+            <label for="total">Total:</label><br>
+            <input type="text" id="total" name="total" value="" disabled><br>
+            
+            <input type="button" value="Click Here to Calculate" onclick="calculateTax()">
+        </form>
+    </body>
+</html>
