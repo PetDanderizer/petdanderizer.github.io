@@ -1,3 +1,3 @@
 # The Page
-go to [petdanderizer.github.io/[page_goes_here]/index.html](https://petdanderizer.github.io/Week 6/index.html) to view stuff
+go to a page like https://petdanderizer.github.io/Week%206/index.html to view stuff
 have fun
