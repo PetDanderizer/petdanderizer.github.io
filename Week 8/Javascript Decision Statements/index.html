@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="email">Email Address: <span id="email-error"></span></label>
+          <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+        </div>
+        
+        <div class="form-group">
+          <label for="confirm">Email Address: <span id="confirm-error"></span></label>
+          <input type="confirm" class="form-control" placeholder="Confirm email" id="confirm" name="confirm">
+        </div>
+        
+        <input type="button" value="Confirm Email" onclick="checkEmail()">
+      </form>
+      
+      <h1>Pizza Hot Order Form</h1>
+      <form>
+        <div class="form-check">
+          <label class="form-check-label" for="small">
+            <input type="radio" class="form-check-input" id="small" name="sizing" value="Small" checked>Small
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="medium">
+            <input type="radio" class="form-check-input" id="medium" name="sizing" value="Medium">Medium
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="large">
+            <input type="radio" class="form-check-input" id="large" name="sizing" value="Large">Large
+          </label>
+        </div>
+        
+        <hr>
+        
+        <div class="form-check">
+          <label class="form-check-label" for="pepperoni">
+            <input type="checkbox" class="form-check-input" id="pepperoni" name="pepperoni" value="Pepperoni">Pepperoni
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <label class="form-check-label" for="sausage">
+            <input type="checkbox" class="form-check-input" id="sausage" name="sausage" value="Sausage">Sausage
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <label class="form-check-label" for="mushrooms">
+            <input type="checkbox" class="form-check-input" id="mushrooms" name="mushrooms" value="Mushrooms">Mushrooms
+          </label>
+        </div>
+        
+        <hr>
+        <input type="button" value="Process order" onclick="pizzaOrder()">
+        <hr>
+        
+        <div id="output"></div>
+      </form>
+      <img id="cheese_img" src="images/cheese.png">
+      <img id="pepperoni_img" src="images/pepperoni.png">
+      <img id="sausage_img" src="images/sausage.png">
+      <img id="mushrooms_img" src="images/mushrooms.png">
+    </div>
+    
+    <script>
+      document.getElementById("pepperoni").onclick = function() {
+        if (this.checked)
+          document.getElementById("pepperoni_img").style = "display:block;";
+        else
+          document.getElementById("pepperoni_img").style = "display:none;";
+      }
+      
+      document.getElementById("sausage").onclick = function() {
+        if (this.checked)
+          document.getElementById("sausage_img").style = "display:block;";
+        else
+          document.getElementById("sausage_img").style = "display:none;";
+      }
+      
+      document.getElementById("mushrooms").onclick = function() {
+        if (this.checked)
+          document.getElementById("mushrooms_img").style = "display:block;";
+        else
+          document.getElementById("mushrooms_img").style = "display:none;";
+      }
+    </script>
+  </body>
+</html>

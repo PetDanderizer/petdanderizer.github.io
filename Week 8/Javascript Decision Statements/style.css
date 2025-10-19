@@ -1,0 +1,36 @@
+span {
+  color: red;
+  font-weight: bold;
+}
+
+#cheese_img {
+  position: absolute;
+  z-index: 0;
+}
+#pepperoni_img {
+  position: absolute;
+  z-index: 1;
+}
+
+#sausage_img {
+  position: absolute;
+  z-index: 2;
+}
+
+#mushrooms_img {
+  position: absolute;
+  z-index: 3;
+}
+
+/*
+ * look ma, no javascript!
+ */
+
+/*
+form:has(#pepperoni:checked) ~ #pepperoni_img {display:block;}
+form:has(#pepperoni:not(:checked)) ~ #pepperoni_img {display:none;}
+form:has(#sausage:checked) ~ #sausage_img {display:block;}
+form:has(#sausage:not(:checked)) ~ #sausage_img {display:none;}
+form:has(#mushrooms:checked) ~ #mushrooms_img {display:block;}
+form:has(#mushrooms:not(:checked)) ~ #mushrooms_img {display:none;}
+*/
