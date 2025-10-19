@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h2 style="margin-bottom:0px;">My Awesome Quiz :d</h2>
+        <p style="margin:0px;"><small>Look ma, no javascript!</small></p>
+        <form class="jiggle">
+            
+            <div id="question1title">
+                <h4 class="question_title">What does HTML stand for?</h4>
+                <h3 class="correct">Correct!</h3>
+                <h3 class="incorrect">Incorrect!</h3>
+            </div>
+            <div>
+                <input type="radio" name="question1" id="question1a1">
+                <label for="question1a1">Hyper Toxic Monkey Launcher</label>
+            </div>
+            <div>
+                <input type="radio" name="question1" id="question1a2">
+                <label for="question1a2">Cascading Style Sheets</label>
+            </div>
+            <div>
+                <input type="radio" name="question1" id="question1a3">
+                <label for="question1a3">Hank, The Marvelous Log</label>
+            </div>
+            <div>
+                <input type="radio" name="question1" id="question1a4">
+                <label for="question1a4">Hyper Text Markup Language</label>
+            </div>
+            
+            
+            <div id="question2title">
+                <h4 class="question_title">Which Pokémon came first?</h4>
+                <h3 class="correct">Correct!</h3>
+                <h3 class="incorrect">Incorrect!</h3>
+            </div>
+            <div>
+                <input type="radio" name="question2" id="question2a1">
+                <label for="question2a1">Bulbasaur</label>
+            </div>
+            <div>
+                <input type="radio" name="question2" id="question2a2">
+                <label for="question2a2">Rhydon</label>
+            </div>
+            <div>
+                <input type="radio" name="question2" id="question2a3">
+                <label for="question2a3">Mew</label>
+            </div>
+            <div>
+                <input type="radio" name="question2" id="question2a4">
+                <label for="question2a4">Arceus</label>
+            </div>
+            
+            
+            <div id="question3title">
+                <h4 class="question_title">Why does web dev have to be like that?</h4>
+                <h3 class="correct">Correct!</h3>
+                <h3 class="incorrect">Incorrect!</h3>
+            </div>
+            <div>
+                <input type="checkbox" name="question3" id="question3a1">
+                <label for="question3a1">Yes</label><br>
+            </div>
+            <div>
+                <input type="checkbox" name="question3" id="question3a2">
+                <label for="question3a2">No</label><br>
+            </div>
+            <div>
+                <input type="checkbox" name="question3" id="question3a3">
+                <label for="question3a3"><iframe src="https://en.wikipedia.org/wiki/HTML"></iframe></label><br>
+            </div>
+            
+            
+            <div id="question4title">
+                <h4 class="question_title">Select the answers that add up to "39"</h4>
+                <h3 class="correct">Correct!</h3>
+                <h3 class="incorrect">Incorrect!</h3>
+            </div>
+            <div>
+                <input type="checkbox" name="question4" id="question4a1">
+                <label for="question4a1">12</label><br>
+            </div>
+            <div>
+                <input type="checkbox" name="question4" id="question4a2">
+                <label for="question4a2">3</label><br>
+            </div>
+            <div>
+                <input type="checkbox" name="question4" id="question4a3">
+                <label for="question4a3">27</label><br>
+            </div>
+            <div>
+                <input type="checkbox" name="question4" id="question4a4">
+                <label for="question4a4">9</label>
+            </div>
+            
+            <div>
+                <p id="reloadmsg"><b>Do a cacheless reload (ctrl+F5) to retry!</b><br><small><small>or just use keyboard shortcuts to change your answers, I'm not your dad</small></small></p>
+                <input type="checkbox" name="submit_box" id="submit_box">
+                <label for="submit_box" id="submit_text"><strong>Submit Answers</strong></label>
+            </div>
+            
+            <!-- results -->
+            <p class="results"><strong>Results are in!</strong></p>
+            <div class="results">
+                <p class="results"> Your score: <span class="score" id="score0">0%</span><span class="score" id="score25">25%</span><span class="score" id="score50">50%</span><span class="score" id="score75">75%</span><span class="score" id="score100">100%! Congrats!</span></p>
+            </div>
+        </form>
+        <br id="endofpage">
+    </body>
+</html>
