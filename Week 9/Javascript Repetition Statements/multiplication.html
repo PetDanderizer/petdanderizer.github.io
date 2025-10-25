@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function product() {
+                var multiplicand = document.getElementById("multiplicand").value;
+                var multiplier = document.getElementById("multiplier").value;
+
+                document.getElementById("math-output").innerHTML = "";
+
+                for (var i = 1; i <= multiplier; i++) {
+                    document.getElementById("math-output").innerHTML += multiplicand + " X " + i + " = " + (multiplicand * i) + "<br>";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="multiply">
+            <label for="multiplicand">multiplicand: </label><br>
+            <input type="number" name="multiplicand" id="multiplicand" value=""><br>
+            <label for="multiplier">multiplier: </label><br>
+            <input type="number" name="multiplier" id="multiplier" value=""><br>
+
+            <input type="button" value="Click here for Times Table" onclick="product()">
+            <div id="math-output"></div>
+    </body>
+</html>
