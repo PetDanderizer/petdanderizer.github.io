@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function printThingsILike() {
+                var thingsilike = [
+                    "my 3D printer",
+                    "plastic bags (screw turtles)",
+                    "that probably cursed chalice I stole from the blood god's altar",
+                    "my Ultrakill V1 body pillow",
+                    "chocolate (yum)",
+                    "moss (yum)",
+                    "the cute lego planter box on my desk",
+                    "my collection of combustible lemons",
+                    "my lungs (can't live without 'em)",
+                    "really most things not involving tomatoes",
+                ]
+
+                document.write("<ul>");
+
+                for (var i = 0; i < thingsilike.length; i++) {
+                    document.write("<li>" + thingsilike[i] + "</li>");
+                }
+                document.write("</ul>");
+            }
+
+            // https://stackoverflow.com/questions/4842590/how-to-run-a-function-when-the-page-is-loaded
+            window.onload = printThingsILike()
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
