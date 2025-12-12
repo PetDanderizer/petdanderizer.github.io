@@ -1,0 +1,114 @@
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+}
+.nav-item {
+    padding: 5px;
+    border-radius: 5px;;
+}
+.nav-item.selected {
+    background-color: darkgray;
+    box-shadow:5px 5px 5px 0px gray inset;
+}
+.nav-item:not(.selected) {
+    background-color: lightgray;
+}
+.nav-item:not(.selected):hover {
+    box-shadow:5px 5px 5px 0px gray inset;
+}
+nav a {
+    color:black;
+    text-decoration:none;
+}
+.banner {
+    text-shadow:2px 2px 4px #000000;
+    background-color: white;
+}
+
+/* I have no clue how to make this look good. This is the best I can do to make the arrows visible
+ * without making the image stick out too much due to it not meshing correctly with the background.
+ */
+.carousel-item {
+    box-shadow: 0 0 20px 40px white inset;
+    background-color: sienna;
+}
+
+#demo {
+    text-align: center;
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron {
+    border-radius: 0px;
+}
+
+
+/*
+ * style catchable hamster page
+ */
+body:has(.catchable) {
+    overflow: hidden;
+}
+.catchable {
+    border: none;
+    color: white;
+    background-color: white;
+}
+
+@keyframes hamX {
+    from {left: 0%;}
+    to {left: 80%;}
+}
+@keyframes hamY {
+    from {top: 0%;}
+    to {top: 80%;}
+}
+@keyframes flipX {
+    from {transform: scaleX(1);}
+    to {transform: scaleX(-1);}
+}
+
+.catchable img {
+    width: 200px; /* making this use pixels instead of percentage to allow user to zoom in on page to make game easier */
+    position: absolute;
+    animation-name: hamX, hamY, flipX;
+/*     animation-duration: 1.4s, 4.17s, 1.4s; */ /* will get populated by javascript instead */
+    animation-timing-function: cubic-bezier; /* this makes some wild movements and it's funny so I'm keeping it */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/*
+ * style questionnaire page
+ */
+.negativeQuestionFeedback {
+    color: red;
+}
+
+.deniedbutton {
+    background-color: salmon;
+    border-color: red;
+}
+
+/*
+ * style info page
+ */
+.listheader {
+    margin: 0;
+}
+
+table, th, td {
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px black;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HAMFO</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- when including just this boostrap styling, the nav bar is formatted correctly
+          -- (because of course bootstrap restyles a ton of basic things for no apparent reason),
+          -- but it also makes the nav bar slightly larger on this page than on index.html.
+          -- ...only on Firefox.
+          -- The nav bar is the same size on both pages when viewing in Chromium.
+          -- So I'm just gonna chalk it up to browser jank and ignore it.
+          -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="hamsterHaterCheck(); addHamstersToHamsterTable()">
+        <!-- nav bar -->
+        <nav>
+            <ul class="navbar">
+                <a href="index.html"><li class="nav-item">Hamster Homepage</li></a>
+                <a href="questionnaire.html"><li class="nav-item">Hamster Questionnaire</li></a>
+                <a href="info.html"><li class="nav-item selected">Hamster Info</li></a>
+                <a href="more.html"><li class="nav-item">More Hamsters</li></a>
+            </ul>
+        </nav>
+        <!-- </nav bar> -->
+        <h1>Hamster facts</h1>
+        <h5 class="listheader">Hamsters are:</h5>
+        <ul>
+            <li>Cute</li>
+            <li>Fuzzy</li>
+            <li>Only mildly murderous</li>
+        </ul>
+        <h5 class="listheader">When meeting a hamster, do the following:</h5>
+        <ol>
+            <li>Pet it</li>
+            <li>Hold it close</li>
+            <li>Try your best to keep it away from nearby live power cords - hamsters find these delicious</li>
+        </ol>
+
+        <h5 class="listheader">A helpful table containing info regarding hamsters:</h5>
+        <!-- will be populated by javascript on page load -->
+        <table id="hamsterTable" style="color: black;">
+            <tr>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Anger</th>
+            </tr>
+        </table>
+
+    </body>
+</html>

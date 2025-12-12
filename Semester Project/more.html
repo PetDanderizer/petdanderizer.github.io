@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MOAR HAM STUR</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- when including just this boostrap styling, the nav bar is formatted correctly
+          -- (because of course bootstrap restyles a ton of basic things for no apparent reason),
+          -- but it also makes the nav bar slightly larger on this page than on index.html.
+          -- ...only on Firefox.
+          -- The nav bar is the same size on both pages when viewing in Chromium.
+          -- So I'm just gonna chalk it up to browser jank and ignore it.
+          -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="hamsterHaterCheck(); randomHamster()">
+        <!-- nav bar -->
+        <nav>
+            <ul class="navbar">
+                <a href="index.html"><li class="nav-item">Hamster Homepage</li></a>
+                <a href="questionnaire.html"><li class="nav-item">Hamster Questionnaire</li></a>
+                <a href="info.html"><li class="nav-item">Hamster Info</li></a>
+                <a href="more.html"><li class="nav-item selected">More Hamsters</li></a>
+            </ul>
+        </nav>
+        <!-- </nav bar> -->
+        <div style="text-align: center;">
+            <br><button onclick="randomHamster()">Random hamster!</button><br><br>
+            <img id="randomhamster" src="#" style="width: 1000px;" alt="a random hamster image">
+        </div>
+    </body>
+</html>

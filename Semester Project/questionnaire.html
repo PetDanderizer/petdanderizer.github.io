@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HAM QUESTION</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- when including just this boostrap styling, the nav bar is formatted correctly
+          -- (because of course bootstrap restyles a ton of basic things for no apparent reason),
+          -- but it also makes the nav bar slightly larger on this page than on index.html.
+          -- ...only on Firefox.
+          -- The nav bar is the same size on both pages when viewing in Chromium.
+          -- So I'm just gonna chalk it up to browser jank and ignore it.
+          -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="hamsterHaterCheck()">
+        <!-- nav bar -->
+        <nav>
+            <ul class="navbar">
+                <a href="index.html"><li class="nav-item">Hamster Homepage</li></a>
+                <a href="questionnaire.html"><li class="nav-item selected">Hamster Questionnaire</li></a>
+                <a href="info.html"><li class="nav-item">Hamster Info</li></a>
+                <a href="more.html"><li class="nav-item">More Hamsters</li></a>
+            </ul>
+        </nav>
+        <!-- </nav bar> -->
+
+        <form>
+            <h4 class="question_title hamsterOpinion">Do you like hamsters?</h4>
+            <div id="hamsterOpinionFeedback"></div>
+            <div>
+                <input type="radio" name="hamsterOpinion" id="likesHamsters">
+                <label for="likesHamsters">Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="hamsterOpinion" id="hatesHamsters">
+                <label for="hatesHamsters">No</label>
+            </div>
+            <h4 class="question_title hamsterCatchOpinion">Do you think you can catch a hamster?</h4>
+            <div id="hamsterCatchOpinionFeedback"></div>
+            <div id="hamsterCatchButton"></div>
+            <div>
+                <input type="radio" name="hamsterCatchOpinion" id="canCatchHamster">
+                <label for="canCatchHamster">Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="hamsterCatchOpinion" id="canNotCatchHamster">
+                <label for="canNotCatchHamster">No</label>
+            </div>
+        </form>
+        <button onclick="submitQuestionnaire()">Submit</button>
+        <br><br>
+        <h5 id="questionnaireComplete"></h5>
+    </body>
+</html>
